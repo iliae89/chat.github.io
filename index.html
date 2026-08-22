@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>چت آنلاین</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="header">
+      <div>
+        <h1>💬 چت آنلاین</h1>
+        <span id="onlineStatus">● آنلاین</span>
+      </div>
+    </header>
+
+    <main id="messages" class="messages">
+      <div class="welcome">
+        <div class="welcome-icon">👋</div>
+        <h2>به چت خوش آمدید</h2>
+        <p>پیامتان را بنویسید و ارسال کنید.</p>
+      </div>
+    </main>
+
+    <form id="messageForm" class="input-area">
+
+      <input
+        id="messageInput"
+        type="text"
+        placeholder="پیام خود را بنویسید..."
+        maxlength="500"
+        autocomplete="off"
+        required
+      >
+
+      <button type="submit" id="sendButton">
+        ➤
+      </button>
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
